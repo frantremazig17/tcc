@@ -2,24 +2,25 @@ html, body {height: 100px; margin: 0px; padding: 0px;}
 
 body{
     display: flex;
-    background-color: white;
-    flex-direction: column;
+    background-image: url("../img/body.png");
+    background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 /*aqui começa o menu-1*/
-#menu-horizontal ul{
+#menu-1 ul li{
+    display: inline;
+}
+
+#menu-1 ul{
     list-style: none;
     height: 43px;
     padding: 0;
     margin: 0;
-    background-color: rgb(0 0 0 / 64%)
+    background-color: rgb(0 0 0 / 76%)
 }
 
-#menu-horizontal ul li{
-    display: inline;
-}
-
-#menu-horizontal ul a{
+#menu-1 ul a{
     color: rgb(255 165 182);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
@@ -29,19 +30,32 @@ body{
     transition: background .3s;
 }
 
-#menu-horizontal ul a:hover{
-    background-color: rgb(66 64 65);
+#menu-1 ul a:hover{
+    background-color:#ffa5b6;
+    color: #3b242a;
 }
+
+#menu-1 h1{
+    color: rgb(255 255 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 0%;
+    text-align: right;
+    padding: 13px;
+    display: inline-block;
+    text-decoration: none;
+}
+
 /*aqui termina o menu-1*/
 
 
 
-/*aqui começa o menu-2*/
+/*aqui comeÃ§a o menu-2*/
 .menu-2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #40404063;
+    background-color: #ffffff;
     box-shadow: inset 0px -1px 0px 0px #27272778;
 }
 
@@ -52,8 +66,8 @@ body{
 .menu-2 ul a{
     color: rgb(51, 51, 51);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px;
-    width: 21%;
+    padding: 5px;
+    width: 24%;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -74,11 +88,13 @@ body{
 .texto h1{
     text-align: center;
     font-size: 30px;
+    color: #fff;
     font-family: 'Titillium Web', sans-serif;
 }
 
 .texto h2{
     text-align: center;
+    color: #fff;
     font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -87,17 +103,18 @@ body{
 
 
 
-/*aqui começa os produtos*/
+/*aqui comeÃ§a os produtos*/
 .produtos {
     display: flex;
+    background-color: #fff;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*background-image: url("../img/fundo-produto.jpg");*/
     padding: 10px;
     border-radius: 10px 10px 10px;
     margin-top: 30px;
     margin-left: 135px;
     margin-right: 135px;
+    box-shadow: 0px 0px 0px 2px #27272740;
 }
 
 .produto img{
@@ -115,29 +132,15 @@ body{
 /*aqui termina os produtos*/
 
 
-
-/*aqui começa o painel de imagens*/
-.painel-img{
-    width: 900px;
-    height: 350px;
-    background-image: url("../img/painel.jpg");
-    background-size: cover;
-    color: rgb(61, 61, 61);
-    padding: 20px;
-    margin: 100px auto;
-    border-radius: 40px 40px 40px;
-}
-/*aqui termina o painel de imagens*/
-
-
-/*aqui comeca o painel url*/
-.menugrid{
+/*aqui comeca o painel de presentes*/
+.painel-presentes-text h1{
     text-align: center;
-    font: smaller;
-    padding: 2%;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 85px;
+    margin-bottom: -37px;
     color: rgb(39, 39, 39);
 }
-.painel-url {
+.painel-presentes{
     display: grid;
     padding: 30px;
     margin-top: 30px;
@@ -145,50 +148,73 @@ body{
     grid-template-columns: 200px 400px 600px;
     grid-template-rows: 150px 100px 100px;
     grid-gap: 1rem;
-  }
-  
-.painel-url > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    font: 50px Helvetica, san-serif;
-    color: #fff;
-  }
+}
 
 .item1 {
-    background-color: rgb(41, 75, 226);
+    background-color:darkgrey;
+    color: white;
+    cursor: pointer;
 }
   
 .item2 {
-    background-color: turquoise;
+    background-color: darkgrey;
+    background-size: cover;
+    cursor: pointer;
     grid-column-start: 2;
     grid-column-end: 4;
 }
   
 .item3 {
-    background-color: tomato;
+    background-color: darkgrey;
+    background-size: cover;
+    cursor: pointer;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
 .item4 {
-    background-color: rgb(77, 224, 64);
+    background-color: darkgrey;
+    cursor: pointer;
 }
 
 .item5 {
-    background-color: rgb(224, 64, 64);
+    background-color: darkgrey;
+    cursor: pointer;
 }
 
 .item6 {
-    background-color: violet;
+    background-color: darkgrey;
+    cursor: pointer;
     grid-column-start: 2;
     grid-column-end: 4;
+    
 }
-/*aqui termina o painel url*/
+/*aqui termina o painel de presentes*/
 
 
-/*aqui começa o rodapé*/
+
+/*aqui comeÃ§a o painel de imagens*/
+.painel-img{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    /*background-image: url("../img/balÃµes.jpg");*/
+    background-size: cover;
+    margin: 0px auto;
+    margin-bottom: 7%;
+    border-radius: 10% 10px;
+}
+.painel-img img{
+    width: 400px;
+    height: 350px;
+    background-size: cover;
+    
+}
+/*aqui termina o painel de imagens*/
+
+
+/*aqui comeÃ§a o rodapÃ©*/
 .rodape-info{
     width: 100%;
     height: 400px;
@@ -218,4 +244,4 @@ body{
     font-size: 20px;
     text-align: center;
 }
-/*aqui termina o rodapé*/
+/*aqui termina o rodapÃ©*/

@@ -1,15 +1,10 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
+* {padding: 0px; margin: 0px;}
 
-html,
-body {
-    height: 100%;
-}
+html,body {height: 100%;}
 
 body {
-    background-color: #292929;
+    background-image: url("../img/loguin.jpg");
+    background-size: cover;
 }
 
 .corpo-frm {
@@ -24,8 +19,8 @@ body {
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    box-shadow: 4px 9px 5px #23dcb8;
-    background-color: #737373;
+    box-shadow: 3px 2px 13px #000000;
+    background-color: #0000003d;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -77,18 +72,31 @@ body {
     outline: none;
 }
 
-.btn-voltar {
-    width: 70%;
-    height: 40px;
-    margin: 10%;
-    background-color: #e4b775;
-    border: 0px;
-    border-radius: 3px;
-    font-family: Arial, tahoma;
-    font-size: 16px;
-    color: rgb(53, 52, 52);
-    outline: none;
+.corpo-frm a{
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
+
+.corpo-frm img{
+    width: 100px;
+    height: 100px;
+}
+
+.botao-voltar{
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px;
+    left: 0.5%;
+}
+.botao-voltar a{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+
 
 .corpo-frm .btn:active {
     background-color: #00000067;
